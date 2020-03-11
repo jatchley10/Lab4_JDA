@@ -11,4 +11,15 @@
     <string name="fahrenheit_converter">Fahrenheit Converter</string>
     <string name="kilometers_to_miles">Kilometers to Miles</string>
     <string name="tip_calculator">Tip Calculator</string>
+    <string name="button">Button</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="celcius">Celcius</string>
+    <string name="convert">Convert</string>
+    <string name="miles">Miles</string>
+    <string name="kilometers">Kilometers</string>
+    <string name="convert_distance">Convert Distance</string>
+    <string name="tip">Tip %</string>
+    <string name="party_size">Party Size</string>
+    <string name="amount">Amount</string>
+    <string name="calculate">Calculate</string>
 </resources>

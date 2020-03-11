@@ -8,13 +8,59 @@
     tools:context=".Tab1Fragment">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="125dp"
-        android:layout_height="19dp"
-        android:text="@string/fahrenheit_converter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/fahView"
+        android:layout_width="80dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/fahrenheit"
+        app:layout_constraintEnd_toStartOf="@+id/fahEdit"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fahEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fahView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fahView"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/celView"
+        android:layout_width="78dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/celcius"
+        app:layout_constraintEnd_toStartOf="@+id/celEdit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fahView" />
+
+    <EditText
+        android:id="@+id/celEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintBaseline_toBaselineOf="@+id/celView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/celView" />
+
+    <Button
+        android:id="@+id/convertBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/convert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/celEdit" />
 </androidx.constraintlayout.widget.ConstraintLayout>
